@@ -4,10 +4,14 @@
  */
 package com.example.aplicacion.repository;
 
+import com.example.aplicacion.Entity.Usuario;
+import org.springframework.data.repository.CrudRepository;
+
 /**
  *
  * @author ayosu
  */
-public interface usuarioRepositorio {
+public interface usuarioRepositorio extends CrudRepository<Usuario,Long> {
+    
     
 }
