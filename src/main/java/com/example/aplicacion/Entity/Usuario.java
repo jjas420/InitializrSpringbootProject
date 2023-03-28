@@ -3,6 +3,10 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
 package com.example.aplicacion.Entity;
+//netstat -aon | findstr :443 buscar puerto
+
+//taskkill /pid 10720 /F liberar puerto
+
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
