@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this template
+-->
+<html>
+    <head>
+        <title>Index</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            body{
+                color:white;
+                background: black;
+            }
+        </style>
+    </head>
+    <body>
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Usuario</th>
+                    <th>Nombre</th>
+                </tr>
+                
+            </thead>
+            <tbody>
+                <tr th:each="usuario : ${tblUsuarios}">
+                    <td th:text="${usuario.id}"></td>
+                    <td th:text="${usuario.nombreUsusario}"></td>
+                    <td th:text="${usuario.nombreCompleto}"></td>
+
+
+                    
+                    
+                    
+                </tr>
+            </tbody>
+        </table>
+        
+        <div>
+            <a href="/registro.html"> ir a registro</a>
+        </div> 
+    </body>
+</html>
